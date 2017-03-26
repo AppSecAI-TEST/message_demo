@@ -18,7 +18,7 @@ public class Client {
     private static final int PORT = 8043;
 
     public static void main(String[] args) {
-        
+
         SocketConnector mSocketConnector = new NioSocketConnector();
         // 设置协议解析处理
         mSocketConnector.getFilterChain().addLast("protocol", new ProtocolCodecFilter(new FrameCodecFactory()));
@@ -41,8 +41,7 @@ public class Client {
 //        mSession.getCloseFuture().awaitUninterruptibly();
 //        //如果完全不连接了
 //        mSocketConnector.dispose();
-
-
+        
     }
 
 }
