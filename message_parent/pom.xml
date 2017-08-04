@@ -16,6 +16,7 @@
     <modules>
         <module>../kafka</module>
         <module>../mina</module>
+        <module>../basic_nio</module>
     </modules>
 
     <dependencies>
