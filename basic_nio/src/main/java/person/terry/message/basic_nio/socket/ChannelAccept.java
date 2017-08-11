@@ -1,4 +1,4 @@
-package person.terry.message.socket;
+package person.terry.message.basic_nio.socket;
 
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
