@@ -11,7 +11,6 @@ import java.util.concurrent.atomic.AtomicLong;
  */
 public class ServerContext {
 
-    public static final boolean isLog = true;
     private static final int subReactorSize = 3;
     public static final long selectTimeOut = TimeUnit.MILLISECONDS.toMillis(10);
     private static final AtomicLong nextIndex = new AtomicLong();
