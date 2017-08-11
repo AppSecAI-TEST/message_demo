@@ -1,4 +1,4 @@
-package person.terry.message;
+package person.terry.message.basic_nio;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;

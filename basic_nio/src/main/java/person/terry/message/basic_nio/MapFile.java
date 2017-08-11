@@ -1,4 +1,4 @@
-package person.terry.message;
+package person.terry.message.basic_nio;
 
 import java.io.File;
 import java.io.RandomAccessFile;
