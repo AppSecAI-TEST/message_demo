@@ -38,7 +38,7 @@ public abstract class Reactor extends Thread {
         try {
             init();
             while (!Thread.interrupted()) {
-                if (selector.select(timeout) > 0) {
+                if (selector.select(timeout) > 0) {     // 这里会有点小问题 具体见nio cpu%的BUG   https://issues.apache.org/jira/browse/DIRMINA-678 http://blog.csdn.net/chenxuegui1234/article/details/17767433
                     logger.info(selector + " isMainReactor=" + isMainReactor + " select...");
                     Iterator<SelectionKey> keyIt = selector.selectedKeys().iterator();
                     while (keyIt.hasNext()) {
